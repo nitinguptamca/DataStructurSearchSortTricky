@@ -1,4 +1,4 @@
-package com.journaldev.linkedlist;
+package linkedListAndAllConcept.singleLinkedList;
 
 
 import java.util.Scanner;
