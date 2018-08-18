@@ -462,12 +462,6 @@ public class BinarySearchTreeImpl {
 	/**
 	 * Program: How to delete a node from Binary Search Tree (BST)?
 	 * 
-	 * Description: In a Binary Tree, each node can have at most two nodes. For a
-	 * binary tree to be a binary search tree (BST), the data of all the nodes in
-	 * the left sub-tree of the root node should be less than or equals to the data
-	 * of the root. The data of all the nodes in the right subtree of the root node
-	 * should be greater than the data of the root.
-	 * 
 	 * Deleting a node from Binary search tree is little complicated compare to
 	 * inserting a node. It includes two steps:
 	 * 
