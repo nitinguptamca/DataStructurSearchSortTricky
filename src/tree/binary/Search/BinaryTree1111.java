@@ -599,7 +599,7 @@ Consider the below trees:
         return root;
     }
 
-	static void main(String[] args) {
+	public static void main(String[] args) {
 		BinaryTree1111 bt = new BinaryTree1111();
 		bt.add(12);
 		bt.add(9);
@@ -632,6 +632,8 @@ Consider the below trees:
 		System.out.println();
 		bt.traverseLevelOrder();
 		bt.findSmallestValue(bt.root);
+		
+		bt.treeHeight(bt.root);
 
 		bt.delete(5);
 		
