@@ -57,9 +57,9 @@ public class MyDynamicStack {
 
 	private void increaseStackCapacity() {
 		int[] newStack = new int[this.stackSize * 2];
-		for (int i = 0; i < stackSize; i++) {
+		/*for (int i = 0; i < stackSize; i++) {
 			newStack[i] = this.stackArr[i];
-		}
+		}*/
 		this.stackArr = newStack;
 		this.stackSize = this.stackSize * 2;
 	}
