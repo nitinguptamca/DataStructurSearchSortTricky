@@ -36,6 +36,7 @@ public class AVLTree {
 
 		// Perform rotation
 		x.right = y;
+		
 		y.left = T2;
 
 		// Update heights
