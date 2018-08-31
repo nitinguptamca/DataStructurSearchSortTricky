@@ -2,7 +2,7 @@ package tree.binary.Search.tree;
 
 import java.util.Stack;
 
-public class BinaryTreeIierative {
+public class BinaryTreeIterative {
 
 	TreeNode root;
 
@@ -18,7 +18,7 @@ public class BinaryTreeIierative {
 	}
 
 	public static void main(String[] args) {
-		BinaryTreeIierative iierative = new BinaryTreeIierative();
+		BinaryTreeIterative iierative = new BinaryTreeIterative();
 		/*
 		 * iierative.root = iierative.add(100); iierative.root = iierative.add(110);
 		 * iierative.root = iierative.add(90); iierative.root = iierative.add(99);
