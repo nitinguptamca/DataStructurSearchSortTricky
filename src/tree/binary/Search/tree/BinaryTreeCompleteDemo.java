@@ -34,7 +34,7 @@ public class BinaryTreeCompleteDemo {
 		completeDemo.add(118);
 		completeDemo.traverseInOrder(completeDemo.root);
 		System.out.println();
-		completeDemo.traverseInOrderWithoutRecursive(completeDemo.root);
+		
 		completeDemo.traversePreOrder(completeDemo.root);
 		System.out.println();
 		completeDemo.traversePostOrder(completeDemo.root);
@@ -64,45 +64,9 @@ public class BinaryTreeCompleteDemo {
 		completeDemo.mirror();
 		System.out.println();
 		completeDemo.traversePreOrder(completeDemo.root);
-		System.out.println();
-		completeDemo.traverseInOrderWithoutRecursive(completeDemo.root);
-
 	}
 
-	// Convert a Binary Tree into its Mirror Tree
-	// Left -root -right
-	private void traverseInOrderWithoutRecursive(Node root2) {
-		if (root2 == null)
-			return;
-		Stack<Node> stackNode = new Stack<>();
-		Node curr = root2;
-		// Now traverse tree
-		while (curr != null || stackNode.size() > 0) {
-
-			/*
-			 * Reach the left most Node of the curr Node
-			 */
-			while (curr != null) {
-				/*
-				 * place pointer to a tree node on the stack before traversing the node's left
-				 * subtree
-				 */
-				stackNode.push(curr);
-				curr = curr.left;
-			}
-
-			/* Current must be NULL at this point */
-			curr = stackNode.pop();
-
-			System.out.print(curr.value + " ");
-
-			/*
-			 * we have visited the node and its left subtree. Now, it's right subtree's turn
-			 */
-			curr = curr.right;
-		}
-	}
-
+	
 	void mirror() {
 		root = mirror(root);
 	}
