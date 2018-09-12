@@ -44,32 +44,30 @@ public class CountTheNumberOf2s {
 	}
 
 	public static int countOf2I(int number) {
-		int j=number ,countOf2n=0 ,remainder=0,position=0 ,seeEndDigitNumber=0, powerOf10Position=1;
-		
-		while(j>0) {
-			remainder=j%10;
-			int powerOf10Position_minus1=powerOf10Position/10;
-			countOf2n += remainder*position *powerOf10Position_minus1;
-			
-			if(remainder==2) {
-				countOf2n +=seeEndDigitNumber+1;
-			}else if(remainder >2) {
-				countOf2n +=powerOf10Position;
-			}else {
-				countOf2n +=0;
+		int j = number, countOf2n = 0, remainder = 0, position = 0, seeEndDigitNumber = 0, powerOf10Position = 1;
+
+		while (j > 0) {
+			remainder = j % 10;
+			int powerOf10Position_minus1 = powerOf10Position / 10;
+			countOf2n += remainder * position * powerOf10Position_minus1;
+
+			if (remainder == 2) {
+				countOf2n += seeEndDigitNumber + 1;
+			} else if (remainder > 2) {
+				countOf2n += powerOf10Position;
+			} else {
+				countOf2n += 0;
 			}
-			
-			seeEndDigitNumber =seeEndDigitNumber + powerOf10Position +remainder;
-			powerOf10Position *=10;
+
+			seeEndDigitNumber = seeEndDigitNumber + powerOf10Position + remainder;
+			powerOf10Position *= 10;
 			position++;
-			j =j/10;
-		} 
-		
-		
-		
+			j = j / 10;
+		}
+
 		return countOf2n;
 	}
-	
+
 	public static int count2sI(int num) {
 		int countof2s = 0, digit = 0;
 		int j = num, seeEndDigitNum = 0, position = 0, pow10_pos = 1;
@@ -107,8 +105,8 @@ public class CountTheNumberOf2s {
 	}
 
 	public static void main(String[] args) {
-		///System.out.println(count2sR(50));
-		System.out.println(count2sI(517));
+		/// System.out.println(count2sR(50));
+		System.out.println(countOf2I(517));
 
 	}
 

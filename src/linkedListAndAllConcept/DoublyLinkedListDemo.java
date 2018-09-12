@@ -17,6 +17,21 @@ public class DoublyLinkedListDemo {
 		}
 	}
 
+	private void delete() {
+		Node node=new Node(null, null, 40);
+		if (node.prev != null) {
+			node.prev.next = node.next;
+		} else {
+			head = node.next;
+		}
+		if (node.next != null) {
+			node.next.prev = node.prev;
+		} else {
+			tail = node.prev;
+		}
+
+	}
+	
 	private void addAtFirst(int data) {
 		Node node = new Node(null, null, data);
 		if (head == null) {
@@ -178,6 +193,8 @@ public class DoublyLinkedListDemo {
 		demo.addAtPosition(44, 4);
 		demo.addAtPosition(54, 5);
 		demo.addAtPosition(74, 7);
+		demo.delete();
+		
 		demo.printAllForword();
 		demo.printAllBackword();
 
