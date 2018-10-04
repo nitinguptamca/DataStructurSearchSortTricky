@@ -2,7 +2,6 @@ package tree.binary.Search.tree;
 
 public class AVLTreeDemo {
 	Node root;
-
 	private class Node {
 		Node left, right;
 		int height, key;
@@ -12,19 +11,16 @@ public class AVLTreeDemo {
 			height = 1;
 		}
 	}
-
 	int balance(Node N) {
 		if (N == null)
 			return 0;
 		return height(N.left) - height(N.right);
 	}
-
 	int height(Node n) {
 		if (n == null)
 			return 0;
 		return n.height;
 	}
-
 	int max(int a, int b) {
 		return (a > b) ? a : b;
 	}
@@ -54,10 +50,4 @@ public class AVLTreeDemo {
 		
 		return y;
 	}
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-	}
-
 }

@@ -6,11 +6,10 @@ public class LRUCacheDemo1 {
 	int maxSize=5;
 	HashMap<Integer, Node> map = new HashMap<Integer, Node>();
 	Node head, tail;
-
+	
 	private class Node {
 		int key, value;
 		Node next, prev;
-
 		public Node(int key, int value) {
 			this.key = key;
 			this.value = value;
@@ -84,5 +83,4 @@ public class LRUCacheDemo1 {
 		demo1.add(21, 21);
 		demo1.add(11, 11);
 	}
-
 }
