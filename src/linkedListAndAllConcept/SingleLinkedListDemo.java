@@ -173,7 +173,8 @@ public class SingleLinkedListDemo {
 
 	public void reverse() {
 		Node tmp = head;
-		Node previous = null, current = null;
+		Node previous = null, 
+		current = null;
 		while (tmp != null) {
 			current = tmp;
 			tmp = tmp.next;
